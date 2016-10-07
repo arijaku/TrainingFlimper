@@ -1,19 +1,27 @@
 body {
-  background-image: url('../assets/wolox_bg.png');
+  // background-image: url('../assets/wolox_bg.png');
+  background-image: $normal-white;
+  border-top: 10px solid $wolox-green;
 }
 
-.center {
-  background-color: $translucent-white;
-  height: 100%;
-  left: 20%;
-  position: absolute;
-  text-align: center;
-  width: 60%;
 
-  h1 {
-    color: $wolox-green;
-  }
+  
+h1 {
+  color: $wolox-green;
 }
+
+.main-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+
+  
+}
+
+
+
 
 .class-to-be-purified {
   color: $translucent-white;

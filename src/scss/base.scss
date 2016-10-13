@@ -23,15 +23,25 @@
 .features-section {
   align-items: center;
   background-color: $gray-bg;
-  border: 15px solid transparent;
-  border-image: url('/home/arieljakubowicz/trainingProjects/TrainingFlimper/src/assets/triangle.png' 27);
-  border-image-repeat: repeat;
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
   justify-content: center;
+  min-height: 300px;
+  padding: 20px 0;
+  position: relative;
   width: 100%;
 }
+
+.features-section::before {
+  background-image: url('../assets/triangle.png');
+  background-repeat: repeat;
+  content: '';
+  height: 12px;
+  position: absolute;
+  top: -12px;
+  width: 100%;
+}
+
 
 .separator {
   background: linear-gradient($translucent-white, $orange, $translucent-white);
@@ -68,6 +78,8 @@
   color: $gray-text;
   font-weight: normal;
   margin-top: 10px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .safe {

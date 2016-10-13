@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
   head
-    title title here
+    title The Cheese Training
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(href='/css/vendor.css' rel='stylesheet')
@@ -17,12 +17,9 @@ html(lang='en')
       });
       ga('send', 'pageview');
   body
-    
-       
     .main-section
-      img(src="assets/phone.png")
-        
-
-      img(src="assets/tcg_logo.png")
-    // inject:js
-    // endinject
+      img.phone(src='assets/phone.png')
+      .separator
+      img(src='assets/tcg_logo.png')
+// inject:js
+// endinject

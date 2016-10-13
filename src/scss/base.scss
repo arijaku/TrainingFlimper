@@ -1,28 +1,40 @@
 body {
   // background-image: url('../assets/wolox_bg.png');
   background-image: $normal-white;
-  border-top: 10px solid $wolox-green;
+  border-top: 10px solid $orange;
 }
 
-
-  
 h1 {
   color: $wolox-green;
 }
 
 .main-section {
-  width: 100%;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   padding: 40px 0;
-
-  
+  width: 100%;
 }
 
-
+.separator {
+  background: linear-gradient($translucent-white, $orange, $translucent-white);
+  height: 250px;
+  margin: 0 40px;
+  visibility: visible;
+  width: 3px;
+}
 
 
 .class-to-be-purified {
   color: $translucent-white;
+}
+
+@media only screen and (max-width: 700px) {
+  .separator {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+  }
 }

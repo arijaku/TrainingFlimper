@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
 .general {
   background-color: $white;
   display: flex;
   flex-direction: column;
 }
 
+* {
+  font-family: 'Open Sans';
+}
+
 .main-section {
   align-items: center;
   border-top: 10px solid $orange;
   display: flex;
+  height: 50%;
   justify-content: center;
   padding: 40px 0;
+  width: 100%;
+}
+
+.features-section {
+  align-items: center;
+  background-color: $gray-bg;
+  display: flex;
+  height: 300px;
+  justify-content: center;
   width: 100%;
 }
 
@@ -19,6 +35,30 @@
   margin: 0 40px;
   visibility: visible;
   width: 3px;
+}
+
+.reminder {
+  margin: 0 200px;
+}
+
+.list {
+  height: auto;
+  width: auto;
+}
+
+.safe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
+  height: auto;
+  justify-content: center;
+  width: auto;
+}
+
+.safeimg {
+  width: 53px;
 }
 
 .class-to-be-purified {
@@ -33,4 +73,5 @@
   .phone {
     display: none;
   }
+
 }

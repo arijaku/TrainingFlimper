@@ -1,7 +1,9 @@
 body {
-  // background-image: url('../assets/wolox_bg.png');
-  background-image: $normal-white;
+  background-image: $white;
   border-top: 10px solid $orange;
+  display: flex;
+  flex-direction: column;
+
 }
 
 h1 {

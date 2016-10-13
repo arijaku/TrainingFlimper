@@ -23,7 +23,11 @@
 .features-section {
   align-items: center;
   background-color: $gray-bg;
+  border: 15px solid transparent;
+  border-image: url('/home/arieljakubowicz/trainingProjects/TrainingFlimper/src/assets/triangle.png' 27);
+  border-image-repeat: repeat;
   display: flex;
+  flex-wrap: wrap;
   height: 300px;
   justify-content: center;
   width: 100%;
@@ -38,27 +42,56 @@
 }
 
 .reminder {
-  margin: 0 200px;
-}
-
-.list {
-  height: auto;
-  width: auto;
-}
-
-.safe {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  height: auto;
+  justify-content: center;
+  margin: 0 200px;
+  width: auto;
+}
+
+.list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
   font-weight: bold;
   height: auto;
   justify-content: center;
   width: auto;
 }
 
-.safeimg {
-  width: 53px;
+.descrip-text {
+  color: $gray-text;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.safe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  height: auto;
+  justify-content: center;
+  width: auto;
+}
+
+.safe-img {
+  margin-bottom: 10px;
+  max-width: 53px;
+}
+
+.reminder-img {
+  margin-bottom: 10px;
+}
+
+.list-img {
+  margin-bottom: 10px;
 }
 
 .class-to-be-purified {

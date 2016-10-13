@@ -1,13 +1,8 @@
-body {
+.general {
   background-image: $white;
   border-top: 10px solid $orange;
   display: flex;
   flex-direction: column;
-
-}
-
-h1 {
-  color: $wolox-green;
 }
 
 .main-section {
@@ -25,7 +20,6 @@ h1 {
   visibility: visible;
   width: 3px;
 }
-
 
 .class-to-be-purified {
   color: $translucent-white;

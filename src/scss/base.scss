@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   padding: 40px 0;
+  position: relative;
   width: 100%;
 }
 
@@ -26,7 +27,6 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px 0;
-  position: relative;
   width: 100%;
 
   &::before {
@@ -40,13 +40,17 @@
   }
 }
 
-.separator {
-  background: linear-gradient($translucent-white, $orange, $translucent-white);
-  height: 250px;
-  margin: 0 40px;
-  visibility: visible;
-  width: 3px;
+.contact-section {
+  align-items: center;
+  background-color: $orange;
+  box-shadow: 0 30px 121px 9px $gray-text;
+  display: flex;
+  flex-direction: column;
+  height: 226px;
+  justify-content: center;
+  width: 100%;
 }
+
 
 .reminder {
   margin: 0 200px;
@@ -79,6 +83,43 @@
 .feature-img {
   margin-bottom: 10px;
 }
+
+.title-text {
+  color: $white;
+  font-weight: bold;
+}
+
+.style-input {
+  border: 2px solid;
+  border-color: $white;
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+}
+
+.btn-subs {
+  background-color: $orange;
+  border: 2px solid;
+  border-radius: 10px;
+  color: $white;
+  font-weight: bold;
+  height: 40px;
+  margin: 20px 0;
+  outline: 0;
+  width: 120px;
+}
+
+.safe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  height: auto;
+  justify-content: center;
+  width: auto;
+}
+
 
 .class-to-be-purified {
   color: $translucent-white;

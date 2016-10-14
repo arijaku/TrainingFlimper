@@ -1,12 +1,12 @@
 .general {
-  background-image: $white;
-  border-top: 10px solid $orange;
+  background-color: $white;
   display: flex;
   flex-direction: column;
 }
 
 .main-section {
   align-items: center;
+  border-top: 10px solid $orange;
   display: flex;
   justify-content: center;
   padding: 40px 0;

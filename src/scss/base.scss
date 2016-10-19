@@ -7,14 +7,13 @@
 }
 
 * {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main-section {
   align-items: center;
   border-top: 10px solid $orange;
   display: flex;
-  height: 50%;
   justify-content: center;
   padding: 40px 0;
   width: 100%;
@@ -22,26 +21,24 @@
 
 .features-section {
   align-items: center;
-  background-color: $gray-bg;
+  background-color: $light-gray;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 300px;
   padding: 20px 0;
   position: relative;
   width: 100%;
-}
 
-.features-section::before {
-  background-image: url('../assets/triangle.png');
-  background-repeat: repeat;
-  content: '';
-  height: 12px;
-  position: absolute;
-  top: -12px;
-  width: 100%;
+  &::before {
+    background-image: url('../assets/triangle.png');
+    background-repeat-x: repeat;
+    content: '';
+    height: 12px;
+    position: absolute;
+    top: -12px;
+    width: 100%;
+  }
 }
-
 
 .separator {
   background: linear-gradient($translucent-white, $orange, $translucent-white);
@@ -52,57 +49,34 @@
 }
 
 .reminder {
+  margin: 0 200px;
+}
+
+.feature {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  font-weight: bold;
-  height: auto;
   justify-content: center;
-  margin: 0 200px;
   width: auto;
 }
 
-.list {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
+.feature-title {
+  color: $black;
+  display: block;
+  font-size: 1.17em;
   font-weight: bold;
-  height: auto;
-  justify-content: center;
-  width: auto;
+  margin: 18.72px 0;
 }
 
 .descrip-text {
   color: $gray-text;
-  font-weight: normal;
+  font-size: 18px;
   margin-top: 10px;
   max-width: 300px;
   text-align: center;
 }
 
-.safe {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: bold;
-  height: auto;
-  justify-content: center;
-  width: auto;
-}
-
-.safe-img {
-  margin-bottom: 10px;
-  max-width: 53px;
-}
-
-.reminder-img {
-  margin-bottom: 10px;
-}
-
-.list-img {
+.feature-img {
   margin-bottom: 10px;
 }
 

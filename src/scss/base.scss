@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
 .general {
   background-color: $white;
   display: flex;
   flex-direction: column;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main-section {
@@ -13,12 +19,65 @@
   width: 100%;
 }
 
+.features-section {
+  align-items: center;
+  background-color: $light-gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    background-image: url('../assets/triangle.png');
+    background-repeat-x: repeat;
+    content: '';
+    height: 12px;
+    position: absolute;
+    top: -12px;
+    width: 100%;
+  }
+}
+
 .separator {
   background: linear-gradient($translucent-white, $orange, $translucent-white);
   height: 250px;
   margin: 0 40px;
   visibility: visible;
   width: 3px;
+}
+
+.reminder {
+  margin: 0 200px;
+}
+
+.feature {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+}
+
+.feature-title {
+  color: $black;
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 18.72px 0;
+}
+
+.descrip-text {
+  color: $gray-text;
+  font-size: 18px;
+  margin-top: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.feature-img {
+  margin-bottom: 10px;
 }
 
 .class-to-be-purified {
@@ -33,4 +92,5 @@
   .phone {
     display: none;
   }
+
 }

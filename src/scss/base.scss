@@ -15,7 +15,7 @@
   border-top: 10px solid $orange;
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 60px 0;
   position: relative;
   width: 100%;
 }
@@ -26,7 +26,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 0;
+  padding: 40px 0;
+  position: relative;
   width: 100%;
 
   &::before {
@@ -48,9 +49,18 @@
   flex-direction: column;
   height: 226px;
   justify-content: center;
+  padding: 8px 0;
+  position: relative;
   width: 100%;
 }
 
+.separator {
+  background: linear-gradient($translucent-white, $orange, $translucent-white);
+  height: 250px;
+  margin: 0 40px;
+  visibility: visible;
+  width: 3px;
+}
 
 .reminder {
   margin: 0 200px;
@@ -67,9 +77,9 @@
 .feature-title {
   color: $black;
   display: block;
-  font-size: 1.17em;
+  font-size: 18px;
   font-weight: bold;
-  margin: 18.72px 0;
+  margin: 18px 0;
 }
 
 .descrip-text {
@@ -109,18 +119,6 @@
   outline: 0;
   width: 120px;
 }
-
-.safe {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: bold;
-  height: auto;
-  justify-content: center;
-  width: auto;
-}
-
 
 .class-to-be-purified {
   color: $translucent-white;

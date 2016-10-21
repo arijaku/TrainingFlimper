@@ -15,7 +15,8 @@
   border-top: 10px solid $orange;
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 60px 0;
+  position: relative;
   width: 100%;
 }
 
@@ -25,7 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 0;
+  padding: 40px 0;
   position: relative;
   width: 100%;
 
@@ -38,6 +39,18 @@
     top: -12px;
     width: 100%;
   }
+}
+
+.contact-section {
+  align-items: center;
+  background-color: $orange;
+  box-shadow: 0 30px 120px 10px $gray-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 34px 0;
+  position: relative;
+  width: 100%;
 }
 
 .separator {
@@ -63,9 +76,9 @@
 .feature-title {
   color: $black;
   display: block;
-  font-size: 1.17em;
+  font-size: 18px;
   font-weight: bold;
-  margin: 18.72px 0;
+  margin: 18px 0;
 }
 
 .descrip-text {
@@ -78,6 +91,34 @@
 
 .feature-img {
   margin-bottom: 10px;
+}
+
+.title-text {
+  color: $white;
+  font-weight: bold;
+}
+
+.style-input {
+  border: 2px solid;
+  border-color: $white;
+  border-radius: 10px;
+  height: 30px;
+  max-width: 300px;
+  outline: 0;
+  width: 100%;
+}
+
+.btn-subs {
+  background-color: $orange;
+  border: 2px solid;
+  border-radius: 10px;
+  color: $white;
+  display: flex;
+  font-weight: bold;
+  height: 40px;
+  margin: 20px 0;
+  outline: 0;
+  padding: 0 20px;
 }
 
 .class-to-be-purified {
